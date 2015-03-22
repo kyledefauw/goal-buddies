@@ -1,0 +1,19 @@
+<h1> Edit Part </h1>
+
+<%= form_for @part do |f| %>
+
+<%= f.label :vendor %>
+<%= f.text_area :vendor %>
+<br>
+
+<%= f.label :description %>
+<%= f.text_area :description %>
+<br>
+
+<%= f.label :price %>
+<%= f.text_area :price %>
+<br>
+
+<%= f.submit "Edit Part" %>
+
+<% end %>

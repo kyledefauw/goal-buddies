@@ -1,0 +1,17 @@
+<h1> Home page </h1>
+
+<%= link_to "New Part", new_part_path %>
+<br>
+
+ <% @parts.each do |part| %>
+
+ <%= part.vendor %>
+ <%= part.description %>
+ <%= part.price %>
+
+
+ <%= link_to "Edit Part", edit_part_path(part) %>
+ <%= link_to "Delete Part", parts_path, method: "delete" %>
+ <hr>
+
+ <% end %>

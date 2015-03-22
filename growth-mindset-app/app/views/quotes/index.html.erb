@@ -1,0 +1,9 @@
+<%= link_to "Add New Quote", new_quote_path %>
+
+<% @quote.each do |quote| %>
+  <%= quote.context %> - <%=quote.author %>
+  <br>
+  <%= link_to "View Quote", quote_path(quote) %>
+  <%= link_to "Delete Quote", quote_path(quote), method: "delete" %>
+  <hr>
+<% end %>
