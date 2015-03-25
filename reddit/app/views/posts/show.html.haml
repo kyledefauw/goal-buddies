@@ -1,0 +1,10 @@
+.page-header
+  %h3 Post show page
+
+
+%br
+
+= link_to @post.description, post_comments_path(@post, @comment)
+= link_to "Edit Post", edit_user_post_path(@user, @post)
+= link_to "Delete", user_post_path(@user, @post), method: :delete, data: {confirm: "Are you sure?"}
+%br

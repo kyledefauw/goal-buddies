@@ -1,0 +1,11 @@
+.page-header
+  %h2 Welcome to the Reddit Copy Site
+
+= link_to "New Post", new_user_post_path(@user)
+
+%h3 List of Posts
+
+- @user.posts.each do |post|
+
+  = link_to post.description, user_post_path(@user, post)
+  %br

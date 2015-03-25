@@ -1,0 +1,9 @@
+.page-header
+  %h3 Edit Post
+
+=form_for [@user, @post] do |f|
+
+  =f.label :description
+  =f.text_area :description
+  <br>
+  =f.submit

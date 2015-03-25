@@ -1,0 +1,12 @@
+.page-header
+  %h3 Sign in for Reddit Clone
+
+=form_tag sign_in_path do
+
+  =label_tag :email
+  =email_field_tag :email
+  <br>
+  =label_tag :password
+  =password_field_tag :password
+  <br>
+  =submit_tag "Sign In"

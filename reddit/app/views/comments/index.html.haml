@@ -1,0 +1,11 @@
+.page-header
+  %h2 Comments
+
+= link_to "New Comment", new_post_comment_path(@post)
+
+%h3 List of Comments
+
+- @post.comments.each do |comment|
+
+  = comment.content
+  %br
